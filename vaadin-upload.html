@@ -111,7 +111,8 @@ Custom property | Description | Default
 
       #fileList {
         position: relative;
-        @apply --vaadin-upload-file-list;
+        /*@apply --vaadin-upload-file-list;*/
+        display: none;
       }
 
       #buttons {
@@ -137,7 +138,16 @@ Custom property | Description | Default
         padding: .43em .57em;
         background: var(--primary-color, #00B4F0);
         color: var(--primary-font-color, #FFF);
-        @apply --vaadin-upload-button-add;
+        /*@apply --vaadin-upload-button-add;*/
+        width: 184px;
+        height: 36px;
+        border-radius: 6px;
+        border: solid 1px #f36602;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: none;
       }
 
       #addButton[disabled] {
